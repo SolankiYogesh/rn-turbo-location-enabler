@@ -2,13 +2,13 @@ pre-commit:
   parallel: true
   commands:
     lint:
-      glob: '*.{js,ts,jsx,tsx}'
-      run: PATH="$PATH:/usr/local/bin" npx eslint {staged_files}
+      glob: "*.{js,ts,jsx,tsx}"
+      run: npx eslint {staged_files}
     types:
-      glob: '*.{js,ts,jsx,tsx}'
-      run: PATH="$PATH:/usr/local/bin" npx tsc
+      glob: "*.{js,ts, jsx, tsx}"
+      run: npx tsc
 commit-msg:
   parallel: true
   commands:
     commitlint:
-      run: PATH="$PATH:/usr/local/bin" npx commitlint --edit
+      run: npx commitlint --edit

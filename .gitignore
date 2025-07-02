@@ -41,6 +41,9 @@ project.xcworkspace
 local.properties
 android.iml
 
+# Cocoapods
+#
+example/ios/Pods
 
 # Ruby
 example/vendor/
@@ -76,8 +79,8 @@ android/keystores/debug.keystore
 lib/
 
 # React Native Codegen
+ios/generated
 android/generated
 
 # React Native Nitro Modules
 nitrogen/
-.yarn
